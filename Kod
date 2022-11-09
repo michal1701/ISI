@@ -1,1 +1,120 @@
 
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage[export]{adjustbox}
+\usepackage{color}
+\usepackage{array}
+
+\title{Struktura Systemu}
+\author{Binda Michał, Kisiel Kamil, Kosz Krzysztof, Mróz Mikołaj}
+\date{Listopad 2022}
+
+\begin{document}
+
+\maketitle
+
+\begin{titlepage}
+\section*{User Stories}
+\begin{table}
+\centering
+\caption{Sportbook - User stories}
+\resizebox{\linewidth}{!}{%
+\begin{tabular}{|>{\hspace{0pt}}m{0.152\linewidth}|>{\hspace{0pt}}m{0.304\linewidth}|>{\hspace{0pt}}m{0.392\linewidth}|>{\hspace{0pt}}m{0.088\linewidth}|} 
+\hline
+\textbf{Jako…\textcolor{white}{}} & \textbf{Chcę…\textcolor{white}{}} & \textbf{Tak aby…\textcolor{white}{}} & \textbf{Level of Priority} \\ 
+\hline
+Administrator & Móc
+  kontrolować jakie wydarzenia są organizowane i móc je edytować & Aplikacja
+  mogła być uporządkowana & must \\ 
+\hline
+Właściciel obiektu sportowego & Dodać
+  obiekt do systemu i połączyć systemy rezerwacyjne & Wypromować
+  swój obiekt i zwiększyć zyski & could \\ 
+\hline
+Właściciel
+  obiektu sportowego & Móc
+  edytować godziny otwarcia i inne dane dotyczące mojego obiektu & Informacje
+  o obiekcie były aktualne & must \\ 
+\hline
+Zawodnik & Mieć
+  opcję wybrać poziom grupy & Grupa
+  miała podobne umiejętności do mnie & should \\ 
+\hline
+Zawodnik & Móc
+  wyświetlać w aplikacji wydarzenia w wybranym przeze mnie obrębie & Nie musieć
+  jechać na drugi koniec miasta & should \\ 
+\hline
+Zawodnik & Wiedzieć,
+  o której i gdzie jest dane wydarzenie & Móc uczęszczać
+  na zajęcia & must \\ 
+\hline
+Zawodnik & Otrzymywać
+  powiadomienie, kiedy obiekt zostanie zarezerwowany & Nie
+  zapomnieć o danym wydarzeniu & could \\ 
+\hline
+Organizator wydarzeń & Móc
+  zarezerwować obiekt ~z poziomu
+  aplikacji & Nie
+  musieć oddzielnie organizować drużyny i dzwonić do ośrodka żeby się umówić na
+  rezerwację & should \\ 
+\hline
+Organizator wydarzeń & Określać
+  poziom zaawansowania uczestników & Mecze były
+  wyrównane poziomowo & should \\ 
+\hline
+Organizator wydarzenia & Wiedzieć,
+  kto bierze udział w moich prywatnych wydarzeniach & Móc zaplanować
+  trening pod umiejętności zawodników & must \\
+\hline
+\end{tabular}
+}
+\end{table}
+\end{titlepage}
+
+\begin{titlepage}
+\section*{Functionality}
+\begin{itemize}
+    \item	Czy jako administrator mogę zbanować użytkownika?
+    \item	Czy jako administrator mogę usunąć wydarzenie?
+    \item	Czy jako właściciel obiektu mogę odmówić rezerwacji?
+    \item	Czy jako właściciel obiektu mogę wystawiać opinię zawodnikom?
+    \item	Czy jako właściciel obiektu mogę anulować rezerwację?
+    \item	Czy jako zawodnik mogę oceniać obiekt sportowy i organizatora?
+    \item	Czy jako zawodnik mogę dokonywać płatności przez aplikację?
+    \item	Czy jako zawodnik mogę blokować zawodników?
+    \item	Czy jako zawodnik mogę wystawiać opinie zawodnikom?
+    \item	Czy jako zawodnik mogę się wycofać z wydarzenia?
+    \item	Czy jako organizator wydarzeń mogę zmieniać poziom zaawansowania użytkowników w aplikacji?
+    \item	Czy jako organizator wydarzeń mogę wystawiać opinię zawodnikom?
+    \item	Czy jako organizator wydarzeń mogę zablokować zawodników?
+    \item	Czy jako organizator wydarzeń mogę usuwać zawodników z wydarzenia?
+    \item	Czy jako organizator wydarzeń mogę anulować wydarzenie?
+    \item	Czy jako organizator wydarzeń mogę określać wiek zawodników odpowiednich na wydarzenie?
+\end{itemize}
+\end{titlepage}
+
+\section*{Non Functional Requirements}
+\begin{itemize}
+\item Czy właściciele obiektów mogą przyjmować zapłaty gotówką bez udziału aplikacji?
+\item Czy aplikacja będzie wysyłała powiadomienia o rezerwacji obiektu?
+\item Czy aplikacja będzie wysyłała powiadomienia o zebraniu grupy?
+\item Czy rezerwacja obiektu będzie się dokonywała po zebraniu odpowiedniej liczby osób?
+\item Za co może zostać zbanowany użytkownik?
+
+\end{itemize}
+\begin{titlepage}
+    
+
+\section*{Use Case Diagram}
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=16cm, height=14.5cm, left]{Diagram.png}
+    \caption{Diagram Use Case}
+    \label{fig:galaxy}
+\end{figure}
+\end{titlepage}
+
+\end{document}
